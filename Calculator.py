@@ -1,6 +1,6 @@
 while True:
-    print("\n=== Do You Want To Use Calculator ya Discount Calculator ya Vijaly Wheel Units or Date Of Birth Calculator ===")
-    choice = input("\n Enter C for Calculator, D for Discount Calculator, V for Vijaly Wheel Units, B for Date Of Birth Calculator: ").strip().upper()
+    print("\n=== Do You Want To Use Calculator ya Discount Calculator ya Vijaly Wheel Units or Date Of Birth Calculator \ GST Calculator ===")
+    choice = input("\n Enter C for Calculator, D for Discount Calculator, V for Vijaly Wheel Units, B for Date Of Birth Calculator, G for GST Calculator: ").strip().upper()
 
     if choice == "C":
         num1 = int(input("Enter First Number: "))
@@ -66,8 +66,33 @@ while True:
         print("\n--- Your Age ---")
         print(f"{r_year} years, {r_month} months, {r_day} days")
 
+
+    elif choice == "G":
+        print("\n=== C . To Calculate GST Amount ===")
+        print("\n=== R . To Remove GST Amount ===")
+        choice = input("Enter Your Choice (C or R) : ").strip().upper()
+        if choice == "C":
+            amount = float(input("Enter The Original Amount:"))
+            gst_rate = float(input("Enter The GST Rate (%):"))
+            gst_amount = (amount * gst_rate) / 100
+            total_Price = amount + gst_amount
+            print(f"\n--- Result ---")
+            print(f"Original Amount: {amount}")
+            print(f"GST Amount: ({gst_amount}%): {gst_amount}")
+            print(f"Total Bill (To GST): {total_Price}")
+
+        elif choice == 'R':
+            total_price = float(input("Enter The Total Price (Including GST): "))
+            gst_rate = float(input("Enter The GST Rate (%): "))
+            gst_amount = (total_price * gst_rate) / (100 + gst_rate)
+            original_amount = total_price - gst_amount
+            print(f"\n--- Result ---")
+            print(f"Total Price (Including GST): {total_price}")
+            print(f"Original Amount: {original_amount}")
+            print(f"GST Amount: ({gst_rate}%): {gst_amount}")
+
     else:
-        print("Invalid choice. Please enter C, D, V, or B.")
+        print("Invalid choice. Please enter C, D, V, B, or G.")
 
     again = input("\nDo you want to do any other calculation? (yes/no): ").strip().lower()
     if again not in ["yes", "y"]:
