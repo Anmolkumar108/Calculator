@@ -66,11 +66,12 @@ while True:
         print("\n--- Your Age ---")
         print(f"{r_year} years, {r_month} months, {r_day} days")
 
-
+# GST Calculator
     elif choice == "G":
         print("\n=== C . To Calculate GST Amount ===")
         print("\n=== R . To Remove GST Amount ===")
         choice = input("Enter Your Choice (C or R) : ").strip().upper()
+        
         if choice == "C":
             amount = float(input("Enter The Original Amount:"))
             gst_rate = float(input("Enter The GST Rate (%):"))
