@@ -22,7 +22,7 @@ while True:
                 result = num1 / num2
                 print("The Division of", num1, "and", num2, "is", result)
         else:
-            print("Invalid Operation")
+            print("Sorry Invalid Operation")
 
     elif choice == "D":
         price = int(input("Enter The Price Of The Product: "))
@@ -32,6 +32,7 @@ while True:
         print("The Final Price After Discount is:", final_price)
 
     elif choice == "V":
+        print("=== Vijaly Wheel Calculator ===")
         will = int(input("Enter The Units Of Vijaly Wheel: "))
         if will > 100:
             print("You Have To Pay 100 Rs")
