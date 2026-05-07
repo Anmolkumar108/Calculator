@@ -3,6 +3,7 @@ while True:
     choice = input("\n Enter C for Calculator, D for Discount Calculator, V for Vijaly Wheel Units, B for Date Of Birth Calculator, G for GST Calculator: ").strip().upper()
 
     if choice == "C":
+        Print("=== Normal Calculator ===")
         num1 = int(input("Enter First Number: "))
         num2 = int(input("Enter Second Number: "))
         operation = input("Enter Operation (+, -, *, /): ").strip()
@@ -25,6 +26,7 @@ while True:
             print("Sorry Invalid Operation")
 
     elif choice == "D":
+        print("=== Amount Discount Calculator ===")
         price = int(input("Enter The Price Of The Product: "))
         discount = int(input("Enter The Discount Percentage (%): "))
         discount_amount = (price * discount) / 100
@@ -46,6 +48,7 @@ while True:
             print("You Have To Pay 5 Rs")
 
     elif choice == "B":
+        print("=== Date Birth Calculator ===")
         print("Enter Your Date Of Birth (dd mm yyyy):", end="")
         b_day, b_month, b_year = map(int, input().split())
 
@@ -69,6 +72,7 @@ while True:
 
 # GST Calculator
     elif choice == "G":
+        print("=== Gst Calculator ===")
         print("\n=== C . To Calculate GST Amount ===")
         print("\n=== R . To Remove GST Amount ===")
         choice = input("Enter Your Choice (C or R) : ").strip().upper()
