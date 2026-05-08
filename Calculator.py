@@ -2,13 +2,13 @@
 # This Is A Most Advance Calculator
 # =====================================
 while True:
-    print("\n=== Do You Want To Use Calculator ya Discount Calculator ya Vijaly Wheel Units or Date Of Birth Calculator \ GST Calculator ===")
+    print("\n=== Do You Want To Use Calculator And Discount Calculator And Vijaly Wheel Units And Date Of Birth Calculator And GST Calculator ===")
     choice = input("\n Enter C for Calculator, D for Discount Calculator, V for Vijaly Wheel Units, B for Date Of Birth Calculator, G for GST Calculator: ").strip().upper()
 
     if choice == "C":
         Print("=== Normal Calculator ===")
-        num1 = int(input("Enter First Number: "))
-        num2 = int(input("Enter Second Number: "))
+        num1 = int(input("Please Sir Enter First Number: "))
+        num2 = int(input("Please Sir Enter Second Number: "))
         operation = input("Enter Operation (+, -, *, /): ").strip()
         if operation == "+":
             result = num1 + num2
@@ -30,15 +30,15 @@ while True:
 
     elif choice == "D":
         print("=== Amount Discount Calculator ===")
-        price = int(input("Enter The Price Of The Product: "))
-        discount = int(input("Enter The Discount Percentage (%): "))
+        price = int(input("Please Sir Enter The Price Of The Product: "))
+        discount = int(input("Please Sir Enter The Discount Percentage (%): "))
         discount_amount = (price * discount) / 100
         final_price = price - discount_amount
         print("The Final Price After Discount is:", final_price)
 
     elif choice == "V":
         print("=== Vijaly Wheel Calculator ===")
-        will = int(input("Enter The Units Of Vijaly Wheel: "))
+        will = int(input("Please Sir Enter The Units Of Vijaly Wheel: "))
         if will > 100:
             print("You Have To Pay 100 Rs")
         elif will > 50:
@@ -52,7 +52,7 @@ while True:
 
     elif choice == "B":
         print("=== Date Birth Calculator ===")
-        print("Enter Your Date Of Birth (dd mm yyyy):", end="")
+        print("Please Sir Enter Your Date Of Birth (dd mm yyyy):", end="")
         b_day, b_month, b_year = map(int, input().split())
 
         print("Enter Today's Date (dd mm yyyy):", end="")
@@ -78,11 +78,11 @@ while True:
         print("=== Gst Calculator ===")
         print("\n=== C . To Calculate GST Amount ===")
         print("\n=== R . To Remove GST Amount ===")
-        choice = input("Enter Your Choice (C or R) : ").strip().upper()
+        choice = input("Please Sir Enter Your Choice (C or R) : ").strip().upper()
         
         if choice == "C":
-            amount = float(input("Enter The Original Amount:"))
-            gst_rate = float(input("Enter The GST Rate (%):"))
+            amount = float(input("Please Sir Enter The Original Amount:"))
+            gst_rate = float(input("Please Sir Enter The GST Rate (%):"))
             gst_amount = (amount * gst_rate) / 100
             total_Price = amount + gst_amount
             print(f"\n--- Result ---")
@@ -91,8 +91,8 @@ while True:
             print(f"Total Bill (To GST): {total_Price}")
 
         elif choice == 'R':
-            total_price = float(input("Enter The Total Price (Including GST): "))
-            gst_rate = float(input("Enter The GST Rate (%): "))
+            total_price = float(input("Please Sir Enter The Total Price (Including GST): "))
+            gst_rate = float(input("Please Sir Enter The GST Rate (%): "))
             gst_amount = (total_price * gst_rate) / (100 + gst_rate)
             original_amount = total_price - gst_amount
             print(f"\n--- Result ---")
