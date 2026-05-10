@@ -9,10 +9,10 @@ while True:
         Print("=== Normal Calculator ===")
         num1 = int(input("Please Sir Enter First Number: "))
         num2 = int(input("Please Sir Enter Second Number: "))
-        operation = input("Enter Operation (+, -, *, /): ").strip()
+        operation = input("Please Sir Enter Operation (+, -, *, /): ").strip()
         if operation == "+":
             result = num1 + num2
-            print("The Sum of", num1, "and", num2, "is", result)
+            print("The Addition of", num1, "and", num2, "is", result)
         elif operation == "-":
             result = num1 - num2
             print("The Subtraction of", num1, "and", num2, "is", result)
@@ -26,7 +26,7 @@ while True:
                 result = num1 / num2
                 print("The Division of", num1, "and", num2, "is", result)
         else:
-            print("Sorry Invalid Operation")
+            print("Sorry Sir Invalid Operation")
 
     elif choice == "D":
         print("=== Amount Discount Calculator ===")
