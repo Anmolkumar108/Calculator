@@ -56,7 +56,7 @@ while True:
         print("Please Sir Enter Your Date Of Birth (dd mm yyyy):", end="")
         b_day, b_month, b_year = map(int, input().split())
 
-        print("Enter Today's Date (dd mm yyyy):", end="")
+        print("Please Sir Enter Today's Date (dd mm yyyy):", end="")
         t_day, t_month, t_year = map(int, input().split())
 
         if t_day < b_day:
