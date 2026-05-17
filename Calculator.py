@@ -10,6 +10,7 @@ while True:
         num1 = int(input("Please Sir Enter First Number: "))
         num2 = int(input("Please Sir Enter Second Number: "))
         operation = input("Please Sir Enter Operation (+, -, *, /): ").strip()
+        
         if operation == "+":
             result = num1 + num2
             print("The Addition of", num1, "and", num2, "is", result)
@@ -30,7 +31,7 @@ while True:
 
     elif choice == "D":
         print("=== Amount Discount Calculator ===")
-        price = int(input("Please Sir Enter The Price Of The Product: "))
+     price = int(input("Please Sir Enter The Price Of The Product: "))
         discount = int(input("Please Sir Enter The Discount Percentage (%): "))
         discount_amount = (price * discount) / 100
         final_price = price - discount_amount
@@ -51,7 +52,7 @@ while True:
             print("You Have To Pay 5 Rs")
 
     elif choice == "B":
-        print("=== Date Birth Calculator ===")
+        print("=== Date Of Birth Calculator ===")
         print("Please Sir Enter Your Date Of Birth (dd mm yyyy):", end="")
         b_day, b_month, b_year = map(int, input().split())
 
