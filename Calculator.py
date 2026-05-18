@@ -52,7 +52,7 @@ while True:
             print("You Have To Pay 5 Rs")
 
     elif choice == "B":
-        print("=== Date Of Birth Calculator ===")
+        print("=== Check Date Of Birth  ===")
         print("Please Sir Enter Your Date Of Birth (dd mm yyyy):", end="")
         b_day, b_month, b_year = map(int, input().split())
 
