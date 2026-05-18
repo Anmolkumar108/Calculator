@@ -30,6 +30,7 @@ while True:
             print("Sorry Sir Invalid Operation")
 
     elif choice == "D":
+        
         print("=== Amount Discount Calculator ===")
      price = int(input("Please Sir Enter The Price Of The Product: "))
         discount = int(input("Please Sir Enter The Discount Percentage (%): "))
