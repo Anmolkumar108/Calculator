@@ -38,7 +38,7 @@ while True:
         print("The Final Price After Discount is:", final_price)
 
     elif choice == "V":
-        print("=== Vijaly Wheel Calculator ===")
+        print("=== Check Vijaly Wheel Calculator ===")
         will = int(input("Please Sir Enter The Units Of Vijaly Wheel: "))
         if will > 100:
             print("You Have To Pay 100 Rs")
